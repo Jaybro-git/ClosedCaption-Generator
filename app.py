@@ -57,7 +57,7 @@ def main():
         else:
             st.audio(uploaded_file)
 
-        st.space("small")
+        st.write("")
 
         task_choice = st.radio(
             "Choose your task:",
