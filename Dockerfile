@@ -27,4 +27,4 @@ ENV HOME=/home/user \
     PATH=/home/user/.local/bin:$PATH
 
 # 8. Run the app
-CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
