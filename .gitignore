@@ -1,0 +1,15 @@
+# Ignore python cache files
+__pycache__/
+*.pyc
+
+# Ignore temp files
+temp/
+*.mp4
+*.mp3
+*.wav
+*.srt
+*.txt
+
+# Ignore environment/system files
+.env
+.DS_Store
