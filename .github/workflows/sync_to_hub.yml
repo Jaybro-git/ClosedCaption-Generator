@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Jaybro-HF:$HF_TOKEN@huggingface.co/spaces/Jaybro-HF/ClosedCaption-Generator main
+        run: git push --force https://Jaybro-HF:$HF_TOKEN@huggingface.co/spaces/Jaybro-HF/ClosedCaption-Generator main
