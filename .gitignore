@@ -13,3 +13,5 @@ temp/
 # Ignore environment/system files
 .env
 .DS_Store
+
+!requirements.txt
