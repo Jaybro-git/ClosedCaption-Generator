@@ -16,12 +16,13 @@ COPY requirements.txt .
 # 5. Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 6. Copy the entire src folder and app.py
-COPY src/ ./src/
-COPY app.py .
-
-# 7. Create a non-root user (Required for Hugging Face security)
+# 6. Create the user and setup permissions
 RUN useradd -m -u 1000 user
+
+# Switch ownership of the /app directory to the new user
+RUN chown -R user:user /app
+
+# 7. Switch to the user
 USER user
 ENV HOME=/home/user \
     PATH=/home/user/.local/bin:$PATH
