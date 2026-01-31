@@ -92,26 +92,12 @@ Follow these steps to run the project locally on your machine.
 ### Installation
 
 1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/caption-generator.git](https://github.com/YOUR_USERNAME/caption-generator.git)
-    cd caption-generator
-    ```
 
 2.  **Create a virtual environment (Optional but Recommended)**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
 
 3.  **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 4.  **Run the App**
-    ```bash
-    streamlit run app.py
-    ```
 
 ---
 
@@ -120,22 +106,15 @@ Follow these steps to run the project locally on your machine.
 If you have Docker installed, you can run the app without installing Python or FFmpeg manually.
 
 1.  **Build the Image**
-    ```bash
-    docker build -t caption-generator .
-    ```
 
 2.  **Run the Container**
-    ```bash
-    docker run -p 7860:7860 caption-generator
-    ```
-    *Access the app at `http://localhost:7860`*
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-caption-generator/
+ClosedCaption/
 ├── .github/workflows/   # CI/CD Pipeline for Hugging Face
 ├── src/                 # Source Code
 │   ├── model.py         # Whisper Model Logic
