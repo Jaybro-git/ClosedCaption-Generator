@@ -1,7 +1,7 @@
 # 1. Use a lightweight Python base
 FROM python:3.9-slim
 
-# 2. Install FFmpeg and Git
+# 2. Install FFmpeg (Crucial for Whisper) and Git
 RUN apt-get update && apt-get install -y \
     ffmpeg \
     git \
