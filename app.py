@@ -41,7 +41,7 @@ def main():
     with st.spinner("Loading AI Model..."):
         engine = load_engine()
 
-    uploaded_file = st.file_uploader("Choose a video file", type=["mp4", "mov", "avi", "mp3", "wav", "m4a"])
+    uploaded_file = st.file_uploader("Choose a video/audio file", type=["mp4", "mov", "avi", "mp3", "wav", "m4a"])
 
     if uploaded_file is not None:
         os.makedirs("temp", exist_ok=True)
